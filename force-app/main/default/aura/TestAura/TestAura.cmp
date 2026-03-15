@@ -1,0 +1,34 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <h1>My first Lightning Component</h1>
+    
+    <c:Comp1 TestVar="Value passed from another component" />
+    <br/>
+    <aura:attribute name="Var1" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    Attribute value : {!v.Var1}   
+    <br/>
+    
+    <aura:attribute name="Acc" type="Account" default="{'sobjectType' :'Account', 'Name': 'Test Name'}"/>
+    Account Name : {!v.Acc.Name}
+    <br/>
+                                 
+    <aura:attribute name="arr" type="String[]" default="['arr0', 'arr1', 'arr2']" />
+    Array Values : {!v.arr[0]}
+    <br/>
+    <aura:attribute name="listcollection" type="List" default="['List0','List1', 'List2']" />
+    List Values : {!v.listcollection[1]}
+    <br/>
+    Set is same as list
+    <br/>
+    <aura:attribute name="myMap" type="Map" default = "{a:'Map0', b:'Map1', c:'Map2'}" />
+    Map values: {!v.myMap.b}
+    <br/>
+    Length of List : {!v.listcollection.length}
+     <br/>
+    <aura:attribute name ="jsobj" type="object" />
+    JSObject value : {!v.jsobj.email}
+    <br/>
+    <aura:attribute name ="Data" type ="LightningWrapper.wrapperCls"/>
+    {!v.Data.myString}
+                    
+</aura:component>

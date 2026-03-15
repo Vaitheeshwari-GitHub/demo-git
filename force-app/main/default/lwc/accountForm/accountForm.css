@@ -1,0 +1,70 @@
+/* Default styles for scrollable container
+.cuf-content {
+    height: 412px;  
+    overflow-y: auto; 
+    
+}*/ 
+
+
+/* .cuf-content {
+    height: 100%;
+    overflow: auto;
+    background-color: yellow;
+   
+}
+@media only screen and (max-width: 767px) {
+    .cuf-content {
+        overflow-y: overlay;
+        background-color: blue;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .cuf-content {
+        height: 500px; 
+        overflow-y: overlay;
+        background-color: cyan;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .cuf-content {
+        height: 600px; 
+        overflow-y: overlay;
+        background-color: red;
+    }
+} */
+
+
+hr {
+    margin: 1.3em; 
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .radio-group {
+     line-height: 3em;
+     float: right;
+     text-align: left;
+     clear: left;
+     position: relative;
+ }
+ .scrollable{
+    height: 430px;
+    overflow: auto;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+.scrollable::-webkit-scrollbar {
+    display: inside; 
+}
+/* Media query for screens with max width of 600px (you can adjust this value) */
+@media (max-width: 600px) {
+    .container {
+        /* Make container scrollable when screen is minimized */
+        overflow-y: auto; /* Vertical scrollbar will be shown if content overflows vertically */
+        max-height: 300px; /* Set maximum height to control the scrollable area */
+    }
+}

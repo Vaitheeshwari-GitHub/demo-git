@@ -1,0 +1,68 @@
+<template>
+    <lightning-card>  
+        <lightning-layout>
+        <lightning-layout-item padding="around-small">
+            <lightning-input type="text" label="Name" value={rec.Name} placeholder="Please enter your name" onchange={copyName}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+            <lightning-input type="tel" label="phone" name="Phone" value={rec.Phone} placeholder="Please enter your phone" onchange={copyPhone}></lightning-input>
+        </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+        <lightning-layout-item padding="around-small">
+            <lightning-input type="email" label="Email address" value={rec.Email} placeholder="Ex.abc@gmail.com" ></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+        <lightning-input-address address-label="Address"
+            street-label="Street"
+            city-label="City"
+            country-label="Country"
+            province-label="State"
+            postal-code-label="PostalCode" onchange={copyInputs}></lightning-input-address> 
+
+        </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-input type="toggle" label="Address Info" name="input1" onclick = {handleToggle}></lightning-input>
+                    <template if:true={toggle}>
+                        <lightning-accordion allow-multiple-sections-open>
+                        <lightning-accordion-section name="A" label="School Address">
+                        <lightning-input-address
+                        address-label="School Address"
+                        street-label="Street"
+                        city-label="City"
+                        country-label="Country"
+                        province-label="State"
+                        postal-code-label="PostalCode" onchange={copyAddress}></lightning-input-address>
+                        </lightning-accordion-section>
+                        <lightning-input type="checkbox" label="Same as School Address?" name="input1" onclick={handleAddress}></lightning-input>
+                        <template if:true={SameAddress}>
+                        </template>
+                        <lightning-accordion-section name="B" label="College Address">
+                            <lightning-input-address
+                            address-label="College Address"
+                            street-label="Street"
+                            city-label="City"
+                            country-label="Country"
+                            province-label="State"
+                            postal-code-label="PostalCode"></lightning-input-address>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+                    </template>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-combobox
+                name = "Gender" label="Gender" placeholder="Please select your gender" options={options} onchange={handleComboBox} value="">
+            </lightning-combobox>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-button variant="brand" label="Save" title="Primary action" onclick={handleClick}></lightning-button>
+                <template if:true= {loading}>
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+                </template>
+            <lightning-button variant="brand" label="Cancel" title="Primary action" onclick={handleReset}></lightning-button>
+        </lightning-layout>
+    </lightning-card>
+</template>

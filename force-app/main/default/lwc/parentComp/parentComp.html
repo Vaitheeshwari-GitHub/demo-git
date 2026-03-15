@@ -1,0 +1,29 @@
+<template>
+    <lightning-card>
+        <lightning-input type="search" label="Enter the account name" onchange={copyvalue}></lightning-input>
+        <br>
+        <lightning-button variant="brand" label="Search" title="Primary action" onclick={handleClick} ></lightning-button>
+        <br>
+        <template if:true={loading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template> 
+        <template if:false={loading}>
+            <template if:true={childMessage}>
+            <lightning-datatable
+            key-field="id"
+            data={childMessage}
+            columns={columns} 
+            show-row-number-column
+            hide-checkbox-column>
+            </lightning-datatable>
+        </template>
+        </template>
+        <br>
+        <template if:true={accounts}>
+        <template if:true={showTable}>
+        <c-child-comp accounts={accounts} onnewevent ={getValue}></c-child-comp>
+        </template>
+    </template> 
+    </lightning-card>
+
+</template>

@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Practice space">
+    <lightning-input type="text" label="Enter search text"  placeholder="Enter your text here" onchange={copySearchText}></lightning-input>
+    <br/>
+    <lightning-button variant="brand" label="Search" onclick={seachName}></lightning-button>
+    <br/>
+    <template if:true={accounts} && if:false={loaded}>
+    <lightning-datatable
+                key-field="id"
+                data={accounts}
+                columns={columns}>
+        </lightning-datatable>
+    </template>
+    <template if:true={loaded}>
+    <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+    <template if:false={accounts}>
+        No data to display!
+    </template>
+</lightning-card>
+<lightning-card>
+    <lightning-record-edit-form
+    object-api-name={objectApiName}
+    record-id={recordId}>
+    <lightning-input-field field-name={nameField}> </lightning-input-field>
+    <lightning-output-field field-name="AccountId">
+    </lightning-output-field>
+</lightning-record-edit-form>
+</lightning-card>
+</template>

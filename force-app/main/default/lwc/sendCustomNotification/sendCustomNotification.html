@@ -1,0 +1,39 @@
+<template>
+    <lightning-card>
+    <lightning-tabset >
+        <lightning-tab label="Tab1">
+            <lightning-input access-key="1" type="text" label="Enter Notification Title" placeholder="type here..." onchange={handleTitle}></lightning-input>
+    <lightning-input type="text" label="Enter Notification Body" placeholder="type here..." onchange={handleBody}></lightning-input>
+    <template if:true={showNotificationTypePicklist}>
+        <lightning-combobox name="notificationtype" label="Select Notification Type" placeholder="Select Notification type"
+        options={notificationOptions} onchange={handleNotificationTypeChange}></lightning-combobox>
+    </template>
+    <div class="slds-m-vertical_medium">
+        <lightning-button variant="brand" label="Send Notification" title="Send Custom Notification" onclick={handleClick1} class="slds-m-left_x-small"></lightning-button>
+    </div>
+        </lightning-tab>
+        <lightning-tab label="Tab2">
+            <lightning-input access-key="2" type="text" label="Enter Notification Title" placeholder="type here..." onchange={handleTitle}></lightning-input>
+    <lightning-input type="text" label="Enter Notification Body" placeholder="type here..." onchange={handleBody}></lightning-input>
+    <template if:true={showNotificationTypePicklist}>
+        <lightning-combobox name="notificationtype" label="Select Notification Type" placeholder="Select Notification type"
+        options={notificationOptions} onchange={handleNotificationTypeChange}></lightning-combobox>
+    </template>
+    <div class="slds-m-vertical_medium">
+        <lightning-button variant="brand" label="Send Notification" title="Send Custom Notification" onclick={handleClick2} class="slds-m-left_x-small"></lightning-button>
+    </div>
+        </lightning-tab>
+        <lightning-tab label="Tab3">
+            <lightning-input access-key="3" type="text" label="Enter Notification Title" placeholder="type here..." onchange={handleTitle}></lightning-input>
+    <lightning-input type="text" label="Enter Notification Body" placeholder="type here..." onchange={handleBody}></lightning-input>
+    <template if:true={showNotificationTypePicklist}>
+        <lightning-combobox name="notificationtype" label="Select Notification Type" placeholder="Select Notification type"
+        options={notificationOptions} onchange={handleNotificationTypeChange}></lightning-combobox>
+    </template>
+    <div class="slds-m-vertical_medium">
+        <lightning-button variant="brand" label="Send Notification" title="Send Custom Notification" onclick={handleClick3} class="slds-m-left_x-small"></lightning-button>
+    </div>
+        </lightning-tab>
+    </lightning-tabset>
+</lightning-card>
+</template>

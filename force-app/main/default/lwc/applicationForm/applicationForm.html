@@ -1,0 +1,61 @@
+<template>
+    <lightning-card>
+        <div id="variants" class="slds-p-vertical_x-medium slds-grid slds-grid_vertical-align-center">                                
+            <lightning-icon
+            icon-name="standard:account"
+            size="small"
+            alternative-text="Application Form"
+            >
+            </lightning-icon>
+            <b>&nbsp;Application Form</b>
+    </div>
+    <br>
+        <lightning-input type="text" label="Enter your Name" autocomplete="name" variant="label-inline"></lightning-input>
+        <lightning-input type="date" label="Enter DOB" variant="label-inline"> </lightning-input>
+        <lightning-input
+        type="email"
+        label="Email"
+        pattern=".+@ttec.com"
+        placeholder="username@ttec.com" 
+        variant="label-inline"
+        >
+        </lightning-input>
+        <lightning-input
+        type="number"
+        label="Provide your percentage"
+        formatter="percent"
+        variant="label-inline"
+        >
+        </lightning-input>
+        <lightning-checkbox-group
+        name="checkboxGroup"
+        label="Select your preferred group(s)"
+        options={options}
+        value={value}
+        onchange={handleChange}
+        required    
+        variant="label-inline"
+        >
+        </lightning-checkbox-group>
+        <lightning-input type="toggle" label="Are you a lateral student?" unchecked >
+        </lightning-input>
+        <lightning-input
+        type="file"
+        label="Attach your marksheet"
+        accept="image/png, .zip"
+        multiple
+        variant="label-inline"
+        >
+        </lightning-input>
+        <lightning-input-address
+        address-label="Address"
+        street-label="Street"
+        city-label="City"
+        country-label="Country"
+        province-label="Province"
+        postal-code-label="PostalCode"
+        city={city}
+        variant="label-inline"
+        ></lightning-input-address>
+    </lightning-card>
+</template>

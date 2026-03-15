@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Dublin North</fullName>
+        <default>false</default>
+        <label>Dublin North</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin North West</fullName>
+        <default>false</default>
+        <label>Dublin North West</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin South</fullName>
+        <default>false</default>
+        <label>Dublin South</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin South City West</fullName>
+        <default>false</default>
+        <label>Dublin South City West</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin South East</fullName>
+        <default>false</default>
+        <label>Dublin South East</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin South East - Wicklow</fullName>
+        <default>false</default>
+        <label>Dublin South East - Wicklow</label>
+    </customValue>
+    <customValue>
+        <fullName>Dublin South West</fullName>
+        <default>false</default>
+        <label>Dublin South West</label>
+    </customValue>
+    <customValue>
+        <fullName>Kildare West Wicklow</fullName>
+        <default>false</default>
+        <label>Kildare West Wicklow</label>
+    </customValue>
+    <customValue>
+        <fullName>Mid West - Clare</fullName>
+        <default>false</default>
+        <label>Mid West - Clare</label>
+    </customValue>
+    <customValue>
+        <fullName>Mid West - Limerick</fullName>
+        <default>false</default>
+        <label>Mid West - Limerick</label>
+    </customValue>
+    <customValue>
+        <fullName>Mid West - Tipperary</fullName>
+        <default>false</default>
+        <label>Mid West - Tipperary</label>
+    </customValue>
+    <customValue>
+        <fullName>Midlands - Westmeath</fullName>
+        <default>false</default>
+        <label>Midlands - Westmeath</label>
+    </customValue>
+    <customValue>
+        <fullName>North East</fullName>
+        <default>false</default>
+        <label>North East</label>
+    </customValue>
+    <customValue>
+        <fullName>North West -Donegal</fullName>
+        <default>false</default>
+        <label>North West -Donegal</label>
+    </customValue>
+    <customValue>
+        <fullName>North West - Sligo/Leitrim</fullName>
+        <default>false</default>
+        <label>North West - Sligo/Leitrim</label>
+    </customValue>
+    <customValue>
+        <fullName>South - Cork</fullName>
+        <default>false</default>
+        <label>South - Cork</label>
+    </customValue>
+    <customValue>
+        <fullName>South East- Carlow/Kilkenney</fullName>
+        <default>false</default>
+        <label>South East- Carlow/Kilkenney</label>
+    </customValue>
+    <customValue>
+        <fullName>South East-Tipperary</fullName>
+        <default>false</default>
+        <label>South East-Tipperary</label>
+    </customValue>
+    <customValue>
+        <fullName>South East- Waterford</fullName>
+        <default>false</default>
+        <label>South East- Waterford</label>
+    </customValue>
+    <customValue>
+        <fullName>South East- Wexford</fullName>
+        <default>false</default>
+        <label>South East- Wexford</label>
+    </customValue>
+    <customValue>
+        <fullName>South - Kerry</fullName>
+        <default>false</default>
+        <label>South - Kerry</label>
+    </customValue>
+    <customValue>
+        <fullName>West - Galway</fullName>
+        <default>false</default>
+        <label>West - Galway</label>
+    </customValue>
+    <customValue>
+        <fullName>West - Mayo</fullName>
+        <default>false</default>
+        <label>West - Mayo</label>
+    </customValue>
+    <customValue>
+        <fullName>West - Roscommon</fullName>
+        <default>false</default>
+        <label>West - Roscommon</label>
+    </customValue>
+    <masterLabel>Local Health Offices</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

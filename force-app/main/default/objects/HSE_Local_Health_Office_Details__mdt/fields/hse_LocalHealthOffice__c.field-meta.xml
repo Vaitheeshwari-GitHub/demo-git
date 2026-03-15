@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hse_LocalHealthOffice__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>HSE Local Health Office</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dublin North</fullName>
+                <default>true</default>
+                <label>Dublin North</label>
+            </value>
+            <value>
+                <fullName>Dublin North West</fullName>
+                <default>false</default>
+                <label>Dublin North West</label>
+            </value>
+            <value>
+                <fullName>Dublin South</fullName>
+                <default>false</default>
+                <label>Dublin South</label>
+            </value>
+            <value>
+                <fullName>Dublin South East</fullName>
+                <default>false</default>
+                <label>Dublin South East</label>
+            </value>
+            <value>
+                <fullName>Dublin South East - Wicklow</fullName>
+                <default>false</default>
+                <label>Dublin South East - Wicklow</label>
+            </value>
+            <value>
+                <fullName>Dublin South West</fullName>
+                <default>false</default>
+                <label>Dublin South West</label>
+            </value>
+            <value>
+                <fullName>Kildare West Wicklow</fullName>
+                <default>false</default>
+                <label>Kildare West Wicklow</label>
+            </value>
+            <value>
+                <fullName>Mid West - Clare</fullName>
+                <default>false</default>
+                <label>Mid West - Clare</label>
+            </value>
+            <value>
+                <fullName>Mid West - Limerick</fullName>
+                <default>false</default>
+                <label>Mid West - Limerick</label>
+            </value>
+            <value>
+                <fullName>Mid West - Tipperary</fullName>
+                <default>false</default>
+                <label>Mid West - Tipperary</label>
+            </value>
+            <value>
+                <fullName>Midlands - Westmeath</fullName>
+                <default>false</default>
+                <label>Midlands - Westmeath</label>
+            </value>
+            <value>
+                <fullName>North East</fullName>
+                <default>false</default>
+                <label>North East</label>
+            </value>
+            <value>
+                <fullName>North West -Donegal</fullName>
+                <default>false</default>
+                <label>North West -Donegal</label>
+            </value>
+            <value>
+                <fullName>North West - Sligo/Leitrim</fullName>
+                <default>false</default>
+                <label>North West - Sligo/Leitrim</label>
+            </value>
+            <value>
+                <fullName>South - Cork</fullName>
+                <default>false</default>
+                <label>South - Cork</label>
+            </value>
+            <value>
+                <fullName>South East- Carlow/Kilkenney</fullName>
+                <default>false</default>
+                <label>South East- Carlow/Kilkenney</label>
+            </value>
+            <value>
+                <fullName>South East-Tipperary</fullName>
+                <default>false</default>
+                <label>South East-Tipperary</label>
+            </value>
+            <value>
+                <fullName>South East- Waterford</fullName>
+                <default>false</default>
+                <label>South East- Waterford</label>
+            </value>
+            <value>
+                <fullName>South East- Wexford</fullName>
+                <default>false</default>
+                <label>South East- Wexford</label>
+            </value>
+            <value>
+                <fullName>South - Kerry</fullName>
+                <default>false</default>
+                <label>South - Kerry</label>
+            </value>
+            <value>
+                <fullName>West - Galway</fullName>
+                <default>false</default>
+                <label>West - Galway</label>
+            </value>
+            <value>
+                <fullName>West - Mayo</fullName>
+                <default>false</default>
+                <label>West - Mayo</label>
+            </value>
+            <value>
+                <fullName>West - Roscommon</fullName>
+                <default>false</default>
+                <label>West - Roscommon</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

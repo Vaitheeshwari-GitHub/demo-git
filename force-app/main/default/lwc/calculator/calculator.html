@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Calculator">
+        <lightning-input type="number" label="Enter 1st Number" onchange={copyText1} variant="label-inline"></lightning-input>
+        <lightning-input type="number" label="Enter 2nd Number" onchange={copyText2} variant="label-inline"></lightning-input>
+        <template lwc:if={symbol}>
+       <b> The result of {text1} {symbol} {text2} is {res} </b>
+    </template>
+        <br>
+        <br>
+        <lightning-button  label="Addition" title="Primary action" onclick={handleAdd} class="--slds-c-button-brand-spacing-inline-start"></lightning-button>
+        <lightning-button  label="Subtraction" title="Primary action" onclick={handleSub} class="--slds-c-button-brand-spacing-inline-start"></lightning-button>
+        <lightning-button  label="Multiplication" title="Primary action" onclick={handleMul}></lightning-button>
+        <lightning-button  label="Division" title="Primary action" onclick={handleDiv}></lightning-button>
+    </lightning-card>
+    
+</template>

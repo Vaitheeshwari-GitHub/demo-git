@@ -1,0 +1,101 @@
+<template>
+    <lightning-card>
+        <lightning-tabset>
+            <lightning-tab label="Account">
+                <b>Account Details</b>
+                <lightning-input type="password" label="password" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})" onchange={copypassword1}></lightning-input>
+<lightning-input type="password" label="confirm password" onchange={copypassword2} onblur={checkpassword}></lightning-input>
+<div class="test1">
+    <lightning-button
+variant="brand"
+label="Submit"
+title="Submit"
+>
+</lightning-button>
+</div>
+            </lightning-tab>
+            <lightning-tab label="Contact" title="2nd tab extended title">
+                <b>Contact Details</b>
+                <b>Progress bar</b>
+        <lightning-progress-indicator current-step="3" type="base" has-error="true" variant="base">
+            <lightning-progress-step label="Step 1" value="1"></lightning-progress-step>
+            <lightning-progress-step label="Step 2" value="2"></lightning-progress-step>
+            <lightning-progress-step label="Step 3" value="3"></lightning-progress-step>
+            <lightning-progress-step label="Step 4" value="4"></lightning-progress-step>
+        </lightning-progress-indicator>
+            </lightning-tab>
+            <lightning-tab label="Lead">
+                <b>Lead Details</b>
+                <lightning-button-stateful
+        label-when-off="Follow"
+        label-when-on="Following"
+        label-when-hover="Unfollow"
+        icon-name-when-off="utility:add"
+        icon-name-when-on="utility:check"
+        icon-name-when-hover="utility:close"
+        selected={isSelected}
+        onclick={handleClick}>
+    </lightning-button-stateful>
+                <lightning-input type="text" value="Welcome"></lightning-input>
+            </lightning-tab>
+        </lightning-tabset>
+        <br>
+    </lightning-card>
+    <div id="variants" class="mycls"> 
+    <lightning-card>
+        <lightning-icon
+        icon-name="standard:account"
+        size="small"
+        alternative-text="Application Form"
+        >
+        </lightning-icon>
+        <lightning-input type="text" label="test" id="pass" variant="label-inline"></lightning-input>
+        <lightning-input type="date" label="DOB" ></lightning-input>
+        <lightning-button-stateful
+        label-when-off="Follow"
+        label-when-on="Following"
+        label-when-hover="Unfollow"
+        icon-name-when-off="utility:add"
+        icon-name-when-on="utility:check"
+        icon-name-when-hover="utility:close"
+        selected={isSelected}
+        onclick={handleClick}>
+    </lightning-button-stateful>
+    <lightning-input type="file" label="attachment"  onchange={handleclick}></lightning-input>
+    </lightning-card>
+    <lightning-file-upload
+        label="Attach receipt"
+        name="fileUploader"
+        accept={acceptedFormats}
+        onuploadfinished={handleUploadFinished}
+        multiple
+    >
+    </lightning-file-upload>
+    
+    
+    <br>
+    <div class="test">
+    <lightning-button
+                    variant="brand"
+                    label="Submit"
+                    title="Submit"
+                    >
+                    </lightning-button>
+                </div>
+</div>
+<lightning-input type="password" label="password" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})" onchange={copypassword1}></lightning-input>
+<lightning-input type="password" label="confirm password" onchange={copypassword2} onblur={checkpassword}></lightning-input>
+<lightning-input type="tel" label="Enter your Phone Number" pattern ="[6-9]{1}[0-9]{9}" variant="label-inline" required></lightning-input>
+<lightning-input type="number" label="Percentage" formatter="percent-fixed" variant="label-inline"></lightning-input>
+<lightning-input
+        type="email"
+        label="Email"
+        pattern=".+@ttec.com"
+        placeholder="username@ttec.com" 
+        variant="label-inline"
+        ></lightning-input>
+        <lightning-input type="date" name="BirthDate" label="Enter Your Date Of Birth" placeholder="type here..." value={birthdate} onclick={calculateDOB} onchange= {handleChangeNum1}></lightning-input>
+        <lightning-input type="password"  value={passId} label="password" onchange={copyVal}></lightning-input>
+        <lightning-input type="checkbox" onclick={myFunction}></lightning-input>
+        <br>
+</template>

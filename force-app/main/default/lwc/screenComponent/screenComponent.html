@@ -1,0 +1,26 @@
+<template>
+    <lightning-card>
+        
+    <lightning-input type="search" label="Name" onchange={copyvalue}></lightning-input>
+    <lightning-button variant="brand" label="Search" onclick={searchName}></lightning-button>
+    
+    
+           
+           <!-- <template for:each={accounts} for:item="account">
+            <p key={account.Id}>{account.Name}</p>
+            </template>-->
+                <template if:true= {showData}>
+                    <div style="height: 300px;">
+                        <lightning-datatable
+                        key-field="id"
+                        data={accounts}
+                        columns={columns}>
+                        </lightning-datatable>
+                    </div>
+                </template>
+            <template if:false={showData}>
+                <p> No data to display</p>
+            </template> 
+        
+    </lightning-card>
+</template>

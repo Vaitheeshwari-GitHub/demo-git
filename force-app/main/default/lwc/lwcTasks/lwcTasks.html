@@ -1,0 +1,30 @@
+<template>
+    <lightning-card>
+    <p> Welcome to LWC </p>
+    <lightning-input type="text" label="Enter your Name" onchange={copyName}></lightning-input>
+    <lightning-button variant="brand" label="Next" title="Primary action" onclick={welcomeMethod}></lightning-button>
+    <template if:true={showWelcome}>
+    <p>Welcome, {Name}</p>
+    </template>
+    <lightning-input type="number" name="input1" label="Enter a number" onchange={copyInput1}></lightning-input>
+    <lightning-input type="number" name="input2" label="Enter another number" onchange={copyInput2}></lightning-input>
+    <lightning-button variant="brand" name="add" label="Add" title="Primary action" onclick={calculateInputs}></lightning-button>
+    <lightning-button variant="brand" name="sub" label="Sub" title="Primary action" onclick={calculateInputs}></lightning-button>
+    <lightning-button variant="brand" name="mul" label="Mul" title="Primary action" onclick={calculateInputs}></lightning-button>
+    <lightning-input type="number" label="Result" value={res}></lightning-input>
+    </lightning-card>
+<lightning-card>
+    <lightning-input type="email" label="Email address" onchange={copyEmail}></lightning-input>
+    <lightning-button variant="brand" name="Send" label="Send Email" title="Primary action" onclick={sendEmail}></lightning-button>
+</lightning-card>
+<br/>
+<lightning-card> 
+<lightning-record-form
+        object-api-name={objectApiName}
+        record-id={recordId}
+        mode="edit"
+        layout-type="Compact" 
+        fields={fields}>
+            </lightning-record-form>
+        </lightning-card>
+</template>

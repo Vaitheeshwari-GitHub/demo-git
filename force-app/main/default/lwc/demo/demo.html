@@ -1,0 +1,17 @@
+<template>
+    <div>
+        Name : {name}
+    </div>
+    <!--uhd-->
+    <!--jnjihi4gt-->
+    <lightning-badge label={designation}></lightning-badge>
+    <lightning-badge label="Alpha"></lightning-badge>
+    <lightning-card>
+        <div>
+            <button onclick={handleOpenUrl}>View Dashboard</button>
+        </div>
+        <div class="iframe-container">
+            <iframe src={iframeUrl} frameborder="0" width="100%" height="630" allowfullscreen="true"></iframe>
+        </div>
+    </lightning-card>
+</template>

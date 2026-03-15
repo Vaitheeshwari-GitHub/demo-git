@@ -1,0 +1,34 @@
+<template>
+    <lightning-card>
+        <lightning-layout>
+            <lightning-tabset>
+                <lightning-tab label="Activity">
+                    <lightning-tabset variant="Scoped">
+                        <lightning-tab label="New Task">
+                            <lightning-input type="text" placeholder="Create a Task.." variant="inline"></lightning-input>
+                            <lightning-button variant="brand" label="Add" title="Primary action"></lightning-button>
+                        </lightning-tab>
+                        <lightning-tab label="Log a call">
+                        </lightning-tab>
+                        <lightning-tab label="New Event">
+                        </lightning-tab>
+                        <lightning-tab label="More">
+                        </lightning-tab>
+                    </lightning-tabset>
+                </lightning-tab>
+                <lightning-tab label="Chatter">
+                    <lightning-tabset>
+                        <lightning-tab label="Post">
+                            <lightning-input type="text" placeholder="Share an update.." variant="inline"></lightning-input>
+                            <lightning-button variant="brand" label="Share" title="Primary action"></lightning-button>
+                        </lightning-tab>
+                        <lightning-tab label="Poll">
+                        </lightning-tab>
+                        <lightning-tab label="Question">
+                        </lightning-tab>
+                    </lightning-tabset>
+                </lightning-tab>
+            </lightning-tabset>
+        </lightning-layout>
+    </lightning-card>
+</template>

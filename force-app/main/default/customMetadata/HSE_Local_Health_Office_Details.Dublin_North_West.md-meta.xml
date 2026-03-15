@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Dublin North West</label>
+    <protected>false</protected>
+    <values>
+        <field>hse_LocalHealthOfficeAddress__c</field>
+        <value xsi:type="xsd:string">Integrated Health Area Dublin North County &amp; City, 
+Nexus Building, 
+Ground Floor, Unit 4&amp;5, Block 6A,
+Blanchardstown Corporate Park,
+Dublin 15, D15 CF9K</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOfficePhoneNumber__c</field>
+        <value xsi:type="xsd:string">01 8975197</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOffice__c</field>
+        <value xsi:type="xsd:string">Dublin North West</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,102 @@
+<template>
+     <c-poc-lightning-datatable key-field="id"
+                data={accList}
+                columns={column}
+                onuploadfinished={handleUploadFinished}
+                hide-checkbox-column>
+    </c-poc-lightning-datatable> 
+    <div class="myClass">
+    <lightning-card title="Accounts" icon-name="custom:custom63">      
+        <template if:true={accountRecords}>                       
+            <div class="myClass" id="variants" style="height:300px;">       
+                <lightning-datatable 
+                    key-field="Id" 
+                    data={accountRecords} 
+                    columns={columns} 
+                    hide-checkbox-column 
+                    show-row-number-column
+                    enable-infinite-loading={infiniteLoadingBool}
+                    is-loading={isLoadingBool}
+                    onsave={handleSave}
+                    onloadmore={onLoadMore}> 
+                </lightning-datatable>       
+            </div>
+        </template>           
+    </lightning-card> 
+</div>
+<div class="color">
+    <lightning-card title="Tree Grid component with data">
+        <div class="color" >
+            <lightning-tree-grid
+                columns={gridColumns}
+                data={gridData}
+                key-field="name"
+            ></lightning-tree-grid>
+        </div>
+    </lightning-card> 
+</div>
+    <lightning-card>
+        <lightning-button onclick={handlePromptClick} label="Open Prompt Modal">
+        </lightning-button>
+    </lightning-card> 
+    <lightning-card>
+        <b>Button group</b>
+        <div class="slds-p-around_medium lgc-bg-inverse">
+        <lightning-button-group>
+            <lightning-button label="Refresh" variant="inverse"></lightning-button>
+            <lightning-button label="Edit" variant="inverse"></lightning-button>
+            <lightning-button label="Save" variant="inverse"></lightning-button>
+        </lightning-button-group>
+        </div>
+        <br>
+        <b>button icon</b>
+        <br>
+        <lightning-button-icon icon-name="utility:settings"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:adduser"   alternative-text="Add user" class="slds-m-left_xx-small" title="Add user"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:delete"    alternative-text="Delete"   class="slds-m-left_xx-small" title="Delete"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:save"      alternative-text="Save"     class="slds-m-left_xx-small" title="Save"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:bookmark"  alternative-text="Bookmark" class="slds-m-left_xx-small" title="Bookmark"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:zoomin"    alternative-text="Zoom in"  class="slds-m-left_xx-small" title="Zoom in"></lightning-button-icon>
+            <lightning-button-icon icon-name="utility:zoomout"   alternative-text="Zoom out" class="slds-m-left_xx-small" title="Zoom out"></lightning-button-icon>
+            <br>
+            <b>Images</b>
+            <lightning-carousel>
+                <lightning-carousel-image
+                    src = "https://www.lightningdesignsystem.com/assets/images/carousel/carousel-01.jpg"
+                    header = "First Card"
+                    description = "First card description."
+                    alternative-text = "First card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = "https://www.lightningdesignsystem.com/assets/images/carousel/carousel-02.jpg"
+                    header = "Second Card"
+                    description = "Second card description."
+                    alternative-text = "Second card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = "https://www.lightningdesignsystem.com/assets/images/carousel/carousel-03.jpg"
+                    header = "Third Card"
+                    description = "Third card description."
+                    alternative-text = "Third card accessible description."
+                    href = "javascript:void(0);">
+                </lightning-carousel-image>
+            </lightning-carousel>
+            <br>
+            <lightning-dual-listbox name="languages"
+            label="Select Languages"
+            source-label="Available"
+            selected-label="Selected"
+            field-level-help="Select your preferred languages"
+            options={options}
+            onchange={handleChange}></lightning-dual-listbox>
+            <br>
+            <p>Selected values are: {selected}</p>
+            <br>
+            <lightning-tile label="Lightning component team" type="media">
+                <lightning-icon slot="media" icon-name="standard:groups"></lightning-icon>
+                <p class="slds-truncate" title="7 Members">7 Members</p>
+            </lightning-tile>
+    </lightning-card>
+</template>

@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="TestVar" type="String" default="Value from another component"/>
+        <c:TestAura Var1="{!v.TestVar}" />
+
+</aura:component>

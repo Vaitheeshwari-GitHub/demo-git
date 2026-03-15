@@ -1,0 +1,105 @@
+<template>
+    
+    <lightning-card>
+        <div style="height: 300px;">
+            <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}>
+            </lightning-datatable>
+        </div>
+    <lightning-input type="date" data-id="name" label="Date field with placeholder" placeholder="select date..." onchange={DateChange}></lightning-input>
+    
+    <lightning-input type="datetime" data-id="2" label="select a date/time value" onchange={DateChange} ></lightning-input>
+
+    <lightning-input type="text" label="Press to open the page" onchange={handleInputChange}></lightning-input>
+    Input value is {inputValue}
+    <lightning-button variant="brand" label="Open" title="Primary action" ></lightning-button>
+    <lightning-input type="checkbox" label="Select checkbox" name="checkbox"></lightning-input>
+    <lightning-input type="toggle" label="Basic option" name="input1"></lightning-input>
+    <lightning-helptext content="You'll receive weekly updates"></lightning-helptext>
+    <lightning-input type="text" label="Name" variant="label-inline"></lightning-input>
+    <lightning-input type="date" name="input1" label="Enter your date of birth" variant="label-inline" ></lightning-input>
+    <lightning-button-menu alternative-text="Show menu">
+        <lightning-menu-item value="MenuItemOne" label="Menu Item One"></lightning-menu-item>
+        <lightning-menu-item value="MenuItemTwo" label="Menu Item Two" disabled></lightning-menu-item>
+        <lightning-menu-item value="MenuItemThree" label="Menu Item Three" disabled></lightning-menu-item>
+        <lightning-menu-item value="MenuItemFour" label="Menu Item Four"></lightning-menu-item>
+    </lightning-button-menu>
+</lightning-layout-item>
+<lightning-layout-item padding="around-small">
+    <div class="header-column">
+        <p class="field-title" title="Field2 (3)">Field 2 (3)
+            <lightning-button-icon icon-name="utility:down" variant="border-filled" size="small" alternative-text="More Actions"></lightning-button-icon>
+        </p>
+        <p>Eligibility</p>
+    </div>
+</lightning-layout-item>
+<lightning-layout-item padding="around-small">
+    <div class="header-column">
+        <p class="field-title" title="Field 3">Field 3</p>
+        <a href="#">Website</a>
+    </div>
+</lightning-layout-item>
+<lightning-layout-item padding="around-small">
+    <div class="header-column">
+        <p class="field-title" title="Field 4">Field 4</p>
+        <p>
+            <span title="">Address</span>
+        </p>
+    </div>
+</lightning-layout-item>
+</lightning-layout>
+    <lightning-accordion>
+        <lightning-accordion-section name="LWC" label="LWC">
+        <p> LWC is Complete</p>
+        </lightning-accordion-section>
+        <lightning-accordion-section name="Aura" label="Aura">
+            <p> Aura is Complete</p>
+            </lightning-accordion-section>
+    </lightning-accordion>
+    <lightning-input type="text" label="Press to open the page">
+        </lightning-input><lightning-helptext content="You'll receive weekly updates">
+
+        </lightning-helptext> 
+        <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+    <div class="slds-p-around_medium lgc-bg">
+        
+        <lightning-input variant="label-inline" type="text" label="Press to open the page" field-level-help="You'll receive weekly updates" ></lightning-input>
+        
+        
+    </div>
+    <lightning-accordion                   
+                         active-section-name="B">
+        <lightning-accordion-section name="A" label="Accordion Title A">
+            <lightning-button-menu slot="actions"
+                                  alternative-text="Show menu"
+                                  icon-size="x-small"
+                                  menu-alignment="right">
+                <lightning-menu-item value="New" label="Menu Item One"></lightning-menu-item>
+                <lightning-menu-item value="Edit" label="Menu Item Two"></lightning-menu-item>
+            </lightning-button-menu>
+            <p>This is the content area for section A.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="B" label="Accordion Title B">
+            <p>This is the content area for section B.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+        <lightning-accordion-section name="C" label="Accordion Title C">
+            <p>This is the content area for section C.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>.</p>
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+    </lightning-accordion>
+    </lightning-card>
+
+</template>

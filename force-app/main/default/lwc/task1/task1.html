@@ -1,0 +1,29 @@
+<template>
+    <lightning-card>
+        <div id="variants" class="slds-p-vertical_x-medium slds-grid slds-grid_vertical-align-center">                                
+                <lightning-icon
+                icon-name="standard:account"
+                size="small"
+                alternative-text="Indicates approval"
+                >
+                </lightning-icon>
+                <b>&nbsp;Personal Information</b>
+        </div>
+        <br>
+        <p> Hello, {name}!</p> 
+        <lightning-input type="text" label="Name" onchange={copyName} variant="label-inline"> </lightning-input>
+        <lightning-input type="date" label="Enter your Date Of Birth" variant="label-inline"> </lightning-input>
+        <lightning-input type="number" label="Enter your Age" variant="label-inline"></lightning-input>
+        <lightning-combobox
+        name="Provide your gender"
+        label="Provide your gender"
+        placeholder="Select..."
+        options={Options}
+        variant="label-inline"
+        >
+        </lightning-combobox>
+        <lightning-input type="number" label="Enter your Phone Number" pattern ="[6-9]{1}[0-9]{9}" variant="label-inline"></lightning-input>
+        <lightning-input type="email" label="Email" variant="label-inline"> </lightning-input>
+        <lightning-input type="password" label="Password" variant="label-inline"> </lightning-input>
+    </lightning-card>
+</template>

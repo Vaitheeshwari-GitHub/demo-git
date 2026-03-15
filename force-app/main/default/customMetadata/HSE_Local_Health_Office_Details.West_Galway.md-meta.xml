@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>West - Galway</label>
+    <protected>false</protected>
+    <values>
+        <field>hse_LocalHealthOfficeAddress__c</field>
+        <value xsi:type="xsd:string">Child Health Office, 
+HSE West, 
+25 Newcastle Road, 
+Galway, H91 RW28</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOfficePhoneNumber__c</field>
+        <value xsi:type="xsd:string">091 546299</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOffice__c</field>
+        <value xsi:type="xsd:string">West - Galway</value>
+    </values>
+</CustomMetadata>

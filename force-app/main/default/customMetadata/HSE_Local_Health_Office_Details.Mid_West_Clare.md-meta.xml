@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Mid West - Clare</label>
+    <protected>false</protected>
+    <values>
+        <field>hse_LocalHealthOfficeAddress__c</field>
+        <value xsi:type="xsd:string">Child Health Office, 
+Elm Primary Care Centre, 
+Gort Road, 
+Ennis, Co. Clare, V95 F2NK</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOfficePhoneNumber__c</field>
+        <value xsi:type="xsd:string">065 6863474</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOfficerName__c</field>
+        <value xsi:type="xsd:string">Dr. Phil Fitzgerald (Principal Medical Officer)</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOffice__c</field>
+        <value xsi:type="xsd:string">Mid West - Clare</value>
+    </values>
+</CustomMetadata>

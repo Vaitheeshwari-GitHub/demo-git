@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>North East</label>
+    <protected>false</protected>
+    <values>
+        <field>hse_LocalHealthOfficeAddress__c</field>
+        <value xsi:type="xsd:string">PCCC Directorate, 
+Dublin North East, 
+Primary Care Services,
+Railway Street, 
+Navan, Co. Meath, C15 Y2CW</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOfficePhoneNumber__c</field>
+        <value xsi:type="xsd:string">046 9076400</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOffice__c</field>
+        <value xsi:type="xsd:string">North East</value>
+    </values>
+</CustomMetadata>

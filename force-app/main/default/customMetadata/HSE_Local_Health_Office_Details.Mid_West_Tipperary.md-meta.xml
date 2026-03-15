@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Mid West - Tipperary</label>
+    <protected>false</protected>
+    <values>
+        <field>hse_LocalHealthOfficeAddress__c</field>
+        <value xsi:type="xsd:string">The Health Centre, 
+Tyone, Nenagh, 
+Co. Tipperary, E45 KH59</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOfficePhoneNumber__c</field>
+        <value xsi:type="xsd:string">067 46410</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOfficerName__c</field>
+        <value xsi:type="xsd:string">Dr. Phil Fitzgerald (Principal Medical Officer)</value>
+    </values>
+    <values>
+        <field>hse_LocalHealthOffice__c</field>
+        <value xsi:type="xsd:string">Mid West - Tipperary</value>
+    </values>
+</CustomMetadata>

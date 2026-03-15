@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Related cases from the customer">
+        <div style="height: 300px;">
+           
+                
+            <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    show-row-number-column
+                        row-number-offset={rowOffset}
+                        hide-checkbox-column
+                    columns={columns}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+        </template>
